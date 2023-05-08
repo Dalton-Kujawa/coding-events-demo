@@ -25,6 +25,24 @@
         <p class="error" th:errors="${event.contactEmail}"></p>
     </div>
     <div class="form-group">
+        <label>Address
+            <input th:field="${event.address}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.address}"></p>
+    </div>
+    <div class="form-group">
+        <label>Registration Required:
+            <input th:field="${event.registerRequired}" type="checkbox" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.registerRequired}"></p>
+    </div>
+    <div class="form-group">
+        <label>Number of Attendees:
+            <input th:field="${event.numberOfAttendees}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.numberOfAttendees}"></p>
+    </div>
+    <div class="form-group">
         <input type="submit" value="Create" class="btn btn-success">
     </div>
 </form>
